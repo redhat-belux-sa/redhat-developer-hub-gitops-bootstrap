@@ -31,7 +31,7 @@ The following components should be provisioned by ArgoCD in your cluster:
 K8S_CLUSTER_API=$(oc get Infrastructure.config.openshift.io cluster -o=jsonpath="{.status.apiServerURL}")
 OPENSHIFT_CLUSTER_INFO=$(echo $K8S_CLUSTER_API | sed 's/^.*https...api//' | sed 's/.6443.*$//')
 GITHUB_HOST_DOMAIN=github.com # if using a hosted Enterprise GitHub replace github.com by your internal domain.
-GITHUB_ORGANIZATION=your-github-org-name-here
+GITHUB_ORGANIZATION=redhat-belux-sa
 GITHUB_ORG_URL=https://$GITHUB_HOST_DOMAIN/$GITHUB_ORGANIZATION
 ```
 
