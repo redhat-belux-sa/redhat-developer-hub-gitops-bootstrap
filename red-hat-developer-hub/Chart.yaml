@@ -1,0 +1,18 @@
+apiVersion: v2
+name: red-hat-developer-hub
+description: Red Hat Developer Hub 
+
+type: application
+
+# Version of the Chart.
+# This is updated when something in the
+# Chart definition is changed
+version: 0.1.0
+
+# Version of the application
+appVersion: "2.16.7"
+
+dependencies:
+- name: bitnami
+  repository: https://charts.bitnami.com/bitnami
+  # version: 2.16.7
